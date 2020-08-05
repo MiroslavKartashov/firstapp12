@@ -1,5 +1,14 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<head>
+    <title>Здравствуйте!</title>
+</head>
 <body>
-<h2>again and again so Hello WORD</h2>
+Если вы хотите начать работу с магазином - <br>
+нажмите кнопку ниже:
+
+<form action = "users" method="get">
+    <input type="submit" value="Войти в Магазин">
+</form>
 </body>
 </html>
