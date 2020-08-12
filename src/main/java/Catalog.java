@@ -29,17 +29,7 @@ public class Catalog extends HttpServlet implements Servlet {
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         logger.info("New request");
         res.setContentType( "text/html" );
-        String text = "<!DOCTYPE html PUBLIC " +
-                "\"-//W3C//DTD HTML 4.01 Transitional//EN\" " +
-                "\"http://www.w3.org/TR/html4/loose.dtd\"> " +
-                "<html><head>" +
-                "<meta http-equiv=\"Content-Type\" " +
-                "content=\"text/html; charset=UTF-8\"> " +
-                "<title>Меню</title>" +
-                "</head>" +
-                "<body>" +
-                "<h1> Наш Ассоортимент </h1>" +
-                "</body></html>";
+        String text = "Наш Ассоортимент ";
         text = String.format(text, config.getInitParameter("Catalog"),
                 config.getInitParameter("Catalog"));
         OutputStream outStream = res.getOutputStream();
